@@ -1,0 +1,20 @@
+{
+  "name": "study-gae-go-angular",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "debug": "dev_appserver.py server/app.yaml"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/howdy39/study-gae-go-angular.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/howdy39/study-gae-go-angular/issues"
+  },
+  "homepage": "https://github.com/howdy39/study-gae-go-angular#readme"
+}
