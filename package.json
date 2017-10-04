@@ -4,8 +4,11 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "debug": "dev_appserver.py server/app.yaml"
+    "test": "cd client && npm run test",
+    "start": "dev_appserver.py server/app.yaml",
+    "build": "cd client && npm run build && cd ../ && cp client/dist/* server/templates/",
+    "deploy": "cd server && gcloud app deploy",
+    "browse": "cd server && gcloud app browse"
   },
   "repository": {
     "type": "git",

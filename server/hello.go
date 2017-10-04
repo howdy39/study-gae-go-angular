@@ -1,9 +1,10 @@
 package hello
 
 import (
-    "fmt"
+    // "fmt"
     "net/http"
     "html/template"
+    "log"
 
     "appengine"
     "appengine/user"
@@ -39,8 +40,8 @@ func handler(w http.ResponseWriter, r *http.Request) {
         return
     }
 
-    fmt.Fprintf(w, `Hello! Welcome, %s! (<a href="%s">sign out</a>)`, u, url)
-    indexTemplate.Execute(w, nil)    
+    indexTemplate.Execute(w, nil)
+    log.Printf(`Hello!!! Welcome, %s! (<a href="%s">sign out</a>)`, u, url)
 }
 
 const guestbookForm = `
